@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 30px;
+    background-color: #555;
+    border-radius: 10px;
+
+}
+
+form input {
+    color: rgb(56, 56, 56);
+    border-radius: 0.1rem;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    outline: none;
+    text-align: right;
+    width: 90%;
+    height: 30px;
+    
+}
+
+
+input.text {
+    height: 30px;
+}
+
+div.options {
+    display:flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+
+}
+
+div.options span.clean{
+    background-color: rgb(239, 134, 89);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 20px;
+    
+}
+
+div.options span {
+    border-radius: 0.1rem;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #555;
+    width:20px;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    font-size: 20px;
+}
+
+div.options span.sinais {
+    background-color: rgb(209, 214, 212);
+}
+
+div.options span.clean:hover {
+    background-color: rgb(231, 92, 33);
+}
+
+div.options span:hover {
+    background-color: rgb(239, 231, 231);
+}
