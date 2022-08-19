@@ -1,9 +1,8 @@
-function addVal(valor) {
+function executar(valor) {
     aux = document.calculadora.expressao.value;
     if (valor=='CE')
         document.calculadora.expressao.value ='';
         else if (valor == '=')
-        //document.calculadora.expressao.value = eval(document.calculadora.expressao.value.replaceAll(',','.')).toString().replaceAll('.',',');
         document.calculadora.expressao.value = eval(document.calculadora.expressao.value.replaceAll(',','.')).toLocaleString('pt-BR');
         else if (valor == '←') {
         aux = aux.substr(0, aux.length -1)
@@ -16,6 +15,6 @@ function addVal(valor) {
 
 document.querySelectorAll('form span').forEach(item => {
  item.addEventListener('click', (e) => {
-    addVal(item.innerHTML);
+    executar(item.innerHTML);
  })
 });
